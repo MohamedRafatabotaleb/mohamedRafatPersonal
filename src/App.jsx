@@ -7,23 +7,21 @@ const App = () => {
       {/* Profile Image */}
       <div className="mt-10">
         <img
-          src="https://via.placeholder.com/100" // Replace with the actual image URL
+          src="/src/icon.png" // Replace with the actual image URL
           alt="Profile"
-          className="border-gray-200 h-24 w-24 rounded-full border-2"
+          className="h-52 w-52 rounded-full border-2"
         />
       </div>
 
       {/* Name and Description */}
       <div className="mt-4 text-center">
-        <h1 className="text-xl font-bold">مهندس كهرباء فلسطيني من غزة</h1>
-        <p className="text-sm mt-2">
-          هوايتي المنتجات والتصاميم، خاصة <br />
-          تصاميم السوشيال ميديا، أهلاً وسهلاً بك
-        </p>
+        <h1 className="text-[30px] font-bold">محمد رأفت محمد</h1>
+        <p className="mt-2 text-[25px]">مبرمج ومطور تطبيقات ومواقع</p>
+        <p className="mt-2 text-[20px]">002 - 01123640791</p>
       </div>
 
       {/* Social Icons */}
-      <div className="mt-4 flex gap-4">
+      <div className="flex gap-4">
         <a href="#" className="text-xl">
           <i className="fab fa-instagram"></i>
         </a>
@@ -38,15 +36,25 @@ const App = () => {
       {/* Links */}
       <div className="mt-8 w-full max-w-md px-4">
         {[
-          { text: "Contact me on Gmail", href: "mailto:example@gmail.com" },
-          { text: "Instagram", href: "#" },
-          { text: "WhatsApp", href: "#" },
-          { text: "Facebook", href: "#" },
+          {
+            text: "Contact me on Gmail",
+            href: "mailto:mohamedrafat.abotaleb@gmail.com",
+          },
+          {
+            text: "linkedin",
+            href: "https://linkedin.com/in/mohamedraafatabotaleb",
+          },
+          { text: "WhatsApp", href: "https://wa.me/01123640791" },
+          {
+            text: "Youtube",
+            href: "https://www.youtube.com/c/MohamedRafatAbotaleb/playlist",
+          },
         ].map((link, index) => (
           <a
             key={index}
             href={link.href}
             className="mt-4 block w-full rounded-xl bg-[#1e293b] py-3 text-center text-white hover:bg-[#334155]"
+            target="_blank"
           >
             {link.text}
           </a>
