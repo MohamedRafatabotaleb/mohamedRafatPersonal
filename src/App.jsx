@@ -16,8 +16,10 @@ const App = () => {
 
       {/* Name and Description */}
       <div className="mt-4 text-center">
-        <h1 className="text-[30px] font-bold">محمد رأفت محمد</h1>
-        <p className="mt-2 text-[25px]">مبرمج ومطور تطبيقات ومواقع</p>
+        <h1 className="text-[30px] font-bold">Mohamed Rafat Mohamed</h1>
+        <p className="mt-2 text-[20px]">
+          Programmer and developer of <br /> applications and websites
+        </p>
         <p className="mt-2 text-[20px]">002 - 01123640791</p>
       </div>
 
