@@ -1,5 +1,6 @@
 // src/App.jsx
 import React from "react";
+import profileImage from "./icon.png";
 
 const App = () => {
   return (
@@ -7,7 +8,7 @@ const App = () => {
       {/* Profile Image */}
       <div className="mt-10">
         <img
-          src="/src/icon.png" // Replace with the actual image URL
+          src={profileImage} // Replace with the actual image URL
           alt="Profile"
           className="h-52 w-52 rounded-full border-2"
         />
